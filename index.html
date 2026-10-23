@@ -21,21 +21,21 @@ a{color:#5bb0ff;text-decoration:none}
 @keyframes p{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}
 </style></head><body>
 <h1>Upward-Trend Ignition Alerts <span style="color:#8a97a5;font-size:12px">· alerts only · no trading</span></h1>
-<p class="sub"><span class="pulse"></span>Catches an uptrend as it IGNITES (hours before the pullback board). Rules ignition-v1, last closed 15m bar. Generated 2026-10-23 15:28:51Z · scan #8724 · universe 54 · BTC regime <b>DOWN/HIGH</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a> · <a href="https://pixel-vector-bell.github.io/okx-pullback-alerts/">pullback board</a></p>
+<p class="sub"><span class="pulse"></span>Catches an uptrend as it IGNITES (hours before the pullback board). Rules ignition-v1, last closed 15m bar. Generated 2026-10-23 15:30:54Z · scan #8725 · universe 53 · BTC regime <b>DOWN/HIGH</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a> · <a href="https://pixel-vector-bell.github.io/okx-pullback-alerts/">pullback board</a></p>
 <div class="cards">
   <div class="card timer"><div class="n" id="since">—</div><div class="l">Last scanned</div></div>
   <div class="card"><div class="n">0</div><div class="l">Ignition</div></div>
-  <div class="card"><div class="n">0</div><div class="l">Confirming</div></div>
-  <div class="card"><div class="n">2</div><div class="l">Running</div></div>
+  <div class="card"><div class="n">1</div><div class="l">Confirming</div></div>
+  <div class="card"><div class="n">1</div><div class="l">Running</div></div>
   <div class="card"><div class="n">2</div><div class="l">Active episodes</div></div>
 </div>
 <table>
 <tr><th>time (UTC)</th><th>level</th><th>token</th><th>price</th><th>mom 90m</th><th>mom 3h</th><th>rsi14</th><th>donch</th><th>relvol</th><th>ret since</th><th>MFE</th><th>MAE</th><th>sent</th></tr>
-<tr><td class='t'>2026-10-23 15:16:09</td><td><span class='lvl' style='background:#2fae5a'>RUNNING</span></td><td><a href='https://www.okx.com/trade-spot/irys-usdt' target='_blank'>IRYS</a></td><td>0.04575</td><td>+6.62%</td><td>+10.75%</td><td>71</td><td>89%</td><td>1.79x</td><td class='pos'>+0.00%</td><td class='pos'>+0.00%</td><td class='neg'>+0.00%</td><td>no</td></tr><tr><td class='t'>2026-10-23 14:31:00</td><td><span class='lvl' style='background:#2fae5a'>RUNNING</span></td><td><a href='https://www.okx.com/trade-spot/dos-usdt' target='_blank'>DOS</a></td><td>0.27160</td><td>+9.96%</td><td>+12.19%</td><td>73</td><td>96%</td><td>2.64x</td><td class='pos'>+5.31%</td><td class='pos'>+5.31%</td><td class='neg'>+0.00%</td><td>no</td></tr>
+<tr><td class='t'>2026-10-23 15:16:09</td><td><span class='lvl' style='background:#2fae5a'>RUNNING</span></td><td><a href='https://www.okx.com/trade-spot/irys-usdt' target='_blank'>IRYS</a></td><td>0.04575</td><td>+6.62%</td><td>+10.75%</td><td>71</td><td>89%</td><td>1.79x</td><td class='pos'>+38.49%</td><td class='pos'>+38.49%</td><td class='neg'>+0.00%</td><td>no</td></tr><tr><td class='t'>2026-10-23 14:31:00</td><td><span class='lvl' style='background:#3b9bd6'>CONFIRMING</span></td><td><a href='https://www.okx.com/trade-spot/dos-usdt' target='_blank'>DOS</a></td><td>0.26100</td><td>+4.86%</td><td>+5.58%</td><td>61</td><td>70%</td><td>2.23x</td><td class='pos'>+1.20%</td><td class='pos'>+5.31%</td><td class='neg'>+0.00%</td><td>no</td></tr>
 </table>
 <p class="note">Levels (last closed 15m bar): <b>IGNITION</b> = trend turning up (close&gt;EMA50, EMA20 rising, 90m mom&ge;+1.5%, in top 40% of the 20-bar range, RSI14&ge;50); <b>CONFIRMING</b> = ignition + a new 20-bar high OR 3h mom&ge;+3% (RSI14&lt;72); <b>RUNNING</b> = reclaimed EMA200 + 3h mom&ge;+4% + near range top (RSI14&lt;75). Texts fire on CONFIRMING &amp; RUNNING; IGNITION is recorded but not texted (earliest/noisiest tier). "ret since / MFE / MAE" track price for 24h after each alert. This board is the EARLY-timing complement to the pullback board, which only fires once a move is mature and dipping. Values unavailable are n/a, never faked. Page auto-refreshes every 60s (GitHub Pages CDN lag ~1-2min).</p>
 <script>
-var LAST=1792769331761;
+var LAST=1792769454490;
 function tick(){
   var el=document.getElementById('since');
   if(!LAST){el.textContent='—';return;}
