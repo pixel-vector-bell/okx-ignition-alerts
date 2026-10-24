@@ -21,21 +21,21 @@ a{color:#5bb0ff;text-decoration:none}
 @keyframes p{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}
 </style></head><body>
 <h1>Upward-Trend Ignition Alerts <span style="color:#8a97a5;font-size:12px">· alerts only · no trading</span></h1>
-<p class="sub"><span class="pulse"></span>Catches an uptrend as it IGNITES (hours before the pullback board). Rules ignition-v1, last closed 15m bar. Generated 2026-10-24 21:44:02Z · scan #9829 · universe 49 · BTC regime <b>SIDEWAYS/LOW</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a> · <a href="https://pixel-vector-bell.github.io/okx-pullback-alerts/">pullback board</a></p>
+<p class="sub"><span class="pulse"></span>Catches an uptrend as it IGNITES (hours before the pullback board). Rules ignition-v1, last closed 15m bar. Generated 2026-10-24 21:46:21Z · scan #9830 · universe 49 · BTC regime <b>DOWN/LOW</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a> · <a href="https://pixel-vector-bell.github.io/okx-pullback-alerts/">pullback board</a></p>
 <div class="cards">
   <div class="card timer"><div class="n" id="since">—</div><div class="l">Last scanned</div></div>
-  <div class="card"><div class="n">2</div><div class="l">Ignition</div></div>
-  <div class="card"><div class="n">1</div><div class="l">Confirming</div></div>
+  <div class="card"><div class="n">1</div><div class="l">Ignition</div></div>
+  <div class="card"><div class="n">0</div><div class="l">Confirming</div></div>
   <div class="card"><div class="n">0</div><div class="l">Running</div></div>
-  <div class="card"><div class="n">3</div><div class="l">Active episodes</div></div>
+  <div class="card"><div class="n">1</div><div class="l">Active episodes</div></div>
 </div>
 <table>
 <tr><th>time (UTC)</th><th>level</th><th>token</th><th>price</th><th>mom 90m</th><th>mom 3h</th><th>rsi14</th><th>donch</th><th>relvol</th><th>ret since</th><th>MFE</th><th>MAE</th><th>sent</th></tr>
-<tr><td class='t'>2026-10-24 21:10:31</td><td><span class='lvl' style='background:#3b9bd6'>CONFIRMING</span></td><td><a href='https://www.okx.com/trade-spot/kat-usdt' target='_blank'>KAT</a></td><td>0.004593</td><td>+4.89%</td><td>+3.70%</td><td>58</td><td>92%</td><td>1.06x</td><td class='pos'>+0.72%</td><td class='pos'>+0.72%</td><td class='neg'>-1.36%</td><td>no</td></tr><tr><td class='t'>2026-10-24 21:30:23</td><td><span class='lvl' style='background:#d9a441'>IGNITION</span></td><td><a href='https://www.okx.com/trade-spot/wet-usdt' target='_blank'>WET</a></td><td>0.05625</td><td>+2.11%</td><td>+0.50%</td><td>56</td><td>86%</td><td>1.63x</td><td class='pos'>+0.00%</td><td class='pos'>+0.00%</td><td class='neg'>+0.00%</td><td>no</td></tr><tr><td class='t'>2026-10-24 20:46:57</td><td><span class='lvl' style='background:#d9a441'>IGNITION</span></td><td><a href='https://www.okx.com/trade-spot/data-usdt' target='_blank'>DATA</a></td><td>0.15810</td><td>+3.60%</td><td>+3.40%</td><td>72</td><td>100%</td><td>0.89x</td><td class='pos'>+2.00%</td><td class='pos'>+2.00%</td><td class='neg'>+0.00%</td><td>no</td></tr>
+<tr><td class='t'>2026-10-24 20:46:57</td><td><span class='lvl' style='background:#d9a441'>IGNITION</span></td><td><a href='https://www.okx.com/trade-spot/data-usdt' target='_blank'>DATA</a></td><td>0.15640</td><td>+2.22%</td><td>+2.69%</td><td>62</td><td>76%</td><td>0.34x</td><td class='pos'>+0.90%</td><td class='pos'>+2.00%</td><td class='neg'>+0.00%</td><td>no</td></tr>
 </table>
 <p class="note">Levels (last closed 15m bar): <b>IGNITION</b> = trend turning up (close&gt;EMA50, EMA20 rising, 90m mom&ge;+1.5%, in top 40% of the 20-bar range, RSI14&ge;50); <b>CONFIRMING</b> = ignition + a new 20-bar high OR 3h mom&ge;+3% (RSI14&lt;72); <b>RUNNING</b> = reclaimed EMA200 + 3h mom&ge;+4% + near range top (RSI14&lt;75). Texts fire on CONFIRMING &amp; RUNNING; IGNITION is recorded but not texted (earliest/noisiest tier). "ret since / MFE / MAE" track price for 24h after each alert. This board is the EARLY-timing complement to the pullback board, which only fires once a move is mature and dipping. Values unavailable are n/a, never faked. Page auto-refreshes every 60s (GitHub Pages CDN lag ~1-2min).</p>
 <script>
-var LAST=1792878242150;
+var LAST=1792878381260;
 function tick(){
   var el=document.getElementById('since');
   if(!LAST){el.textContent='—';return;}
